@@ -5,23 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--Choose CSS Style comment out the rest-->
- 
-         <!--Self CSS-->
-        <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
-        <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-       
 
-        
+    <!--Self CSS-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+
+
+
     <title>Trian Schedule</title>
 </head>
 
 <body>
     <div class="container">
-        
+        <div id="header" class="section"></div>
+
+        <div id="schedtop" class="top">Current Train Schedule</div>
+        <div id="schedule" class="section"></div>
+
+
+        <div id="formtop" class="top">Add Train</div>
+        <div id="addform" class="section">
+                <form class="add-train">
+                        <input required id="name" placeholder="Train Name">
+                        <input required id="destination" placeholder="Destination">
+                        <input required id="first" placeholder="First">
+                        <input required id="freq" placeholder="Frequency">
+                        <button id="addsubmit" type="submit">Submit</button>
+                      </form>
+        </div>
+       
+
+
     </div>
     <!--JQuery CDN-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/javascript/app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
 </body>
 
 </html>
