@@ -16,7 +16,8 @@
     border:2px solid black;
     border-radius: 5px;
     padding: 15px;
-    height: 200px;
+    min-height: 200px;
+    max-height: auto;
     margin-bottom: 20px;
     border-top: 0px
 }
@@ -63,7 +64,7 @@
 }
 
 .add-train{
-    width: 98%;
+    width: 99%;
     margin-left:auto;
     margin-right:auto;
     display: block;
@@ -72,6 +73,7 @@
 }
 
 #addform input{
+    margin-bottom: 10px;
     display: block;
     width: 99%;
     padding-top: 10px;
