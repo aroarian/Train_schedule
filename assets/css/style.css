@@ -82,3 +82,25 @@
     margin-right: auto;
 }
 
+table{
+    width: 100%;
+    text-align: center;
+}
+
+th {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: lightblue;
+}
+
+.table td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+

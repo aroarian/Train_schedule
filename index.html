@@ -9,6 +9,7 @@
     <!--Self CSS-->
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.css" />
 
 
 
@@ -20,20 +21,42 @@
         <div id="header" class="section"></div>
 
         <div id="schedtop" class="top">Current Train Schedule</div>
-        <div id="schedule" class="section"></div>
+        <div id="schedule" class="section">
+            <div class="tableSection">
+                <table class="table">
+                        <th>Train Name</th><th>Destination</th><th>Frequency (min)</th><th>Next Arrival</th><th>Minutes Away</th>
+                </table>
+                
+            </div>
+        </div>
+        
 
 
         <div id="formtop" class="top">Add Train</div>
         <div id="addform" class="section">
-                <form class="add-train">
-                        <input required id="name" placeholder="Train Name">
-                        <input required id="destination" placeholder="Destination">
-                        <input required id="first" placeholder="First">
-                        <input required id="freq" placeholder="Frequency">
-                        <button id="addsubmit" type="submit">Submit</button>
-                      </form>
+            <form class="addTrain" autocomplete="off">
+
+                <label for="name">Train Name</label>
+                <input id="name" type="text" placeholder="Train Name...">
+
+
+                <label for="destination">Destination</label>
+                <input id="destination" type="text" placeholder="Destination...">
+
+
+                <label for="first">First Train HH:mm Military Time</label>
+                <input id="first" class="time ui-timepicker-input" type="text" autocomplete="false" placeholder="Pick Time...">
+
+
+                <label for="freq">Frequency (minutes)</label>
+                <input id="freq" type="number" placeholder="ex. 60">
+
+
+                <button id="button" class="submitButton" type="submit">Submit</button>
+
+            </form>
         </div>
-       
+
 
 
     </div>
@@ -41,6 +64,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/javascript/app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.js"></script>
+    
 </body>
 
 </html>
