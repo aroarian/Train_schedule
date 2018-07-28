@@ -24,10 +24,24 @@ body {
 }
 
 #header {
+  color: white;
+  text-align: center;
   grid-area: header;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   min-height: 100px;
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 3px;
+  font-size: 125%;
+}
+
+#header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5px;
+  width: 15%;
+  height: 15%;
 }
 
 #schedule {
@@ -49,7 +63,7 @@ body {
   padding: 12px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   letter-spacing: 1px;
   padding-left: 20px;
 }
@@ -96,7 +110,6 @@ label {
   color: rgb(216, 216, 216);
   font-family: "Inconsolata", monospace;
   letter-spacing: 1px;
-
 }
 
 input:hover {
@@ -138,7 +151,7 @@ th {
   padding-top: 10px;
   background-color: rgb(255, 187, 0);
   font-weight: bold;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   letter-spacing: 1px;
 }
 
@@ -154,7 +167,7 @@ th {
   padding: 10px;
   padding-left: 15px;
   padding-right: 15px;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sans-serif;
   letter-spacing: 1px;
 }
 
