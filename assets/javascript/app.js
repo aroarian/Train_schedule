@@ -1,10 +1,8 @@
 $(document).ready(function() {
   $("#first").timepicker();
 
-  var format = moment(first, "HH:mm").format("X");
-  var diffMinutes = moment().diff(moment.unix(format), "minutes") % freq;
-  var minAway = freq - diffMinutes;
-  var next = moment().add(minAway, "minutes").format("hh:mm A")
+ 
+  
 // Initialize Firebase
 var config = {
   apiKey: "AIzaSyDNZ76Q7VZZCLWo3y7oE4E2plbkQv8lhEE",
@@ -36,12 +34,15 @@ var database = firebase.database();
       var destination = $("#destination").val().trim();
       var first = $("#first").val().trim();
       var freq = $("#freq").val().trim();
-  
+      var format = moment(first, "HH:mm").format("X");
+      var diffMinutes = moment().diff(moment.unix(format), "minutes") % freq;
+      var minAway = freq - diffMinutes;
+      var next = moment().add(minAway, "minutes").format("hh:mm A")
       
       console.log(first);
       console.log(format);
-      console.log(diffMinutes);
-      console.log(minAway);
+      // console.log(diffMinutes);
+      // console.log(minAway);
       console.log(next);
       
       database.ref('/trains').push({

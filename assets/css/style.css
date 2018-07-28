@@ -1,106 +1,170 @@
-.container{
-    display: grid;
-    padding-left: 50px;
-    padding-right: 50px;
-    grid-template-areas:
-    'header'
-    'top1'
-    'schedule'
-    'top2'
-    'form';
-    
+body {
+  background-color: rgb(85, 85, 85);
+}
+.container {
+  display: grid;
+  padding-left: 50px;
+  padding-right: 50px;
+  grid-template-areas:
+    "header"
+    "top1"
+    "schedule"
+    "top2"
+    "form";
 }
 
-.section{
-    background-color: white;
-    border:2px solid black;
-    border-radius: 5px;
-    padding: 15px;
-    min-height: 200px;
-    max-height: auto;
-    margin-bottom: 20px;
-    border-top: 0px
+.section {
+  background-color: rgb(99, 99, 99);
+  border-radius: 5px;
+  padding: 15px;
+  min-height: 200px;
+  max-height: auto;
+  margin-bottom: 20px;
+  border-top: 0px;
 }
 
-#header{
-    grid-area: header;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border:2px solid black;
- 
+#header {
+  grid-area: header;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  min-height: 100px;
 }
 
-#schedule{
-    grid-area: schedule; 
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    padding: 20px;
+#schedule {
+  grid-area: schedule;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  padding: 20px;
+  padding-top: 10px;
 }
 
-#schedtop{
-    grid-area: top1;  
-    
+#schedtop {
+  grid-area: top1;
 }
 
-.top{
-    color: white;
-    font-weight: bold;
-    background-color: blue;
-    padding: 10px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border: 2px solid black;
+.top {
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(rgb(255, 187, 0), rgb(211, 137, 0));
+  padding: 12px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 1px;
+  padding-left: 20px;
 }
 
-#formtop{
-    grid-area: top2;  
+#formtop {
+  grid-area: top2;
 }
 
-#addform{
-    
-    grid-area: form; 
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+#addform {
+  grid-area: form;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  padding-bottom: 25px;
 }
 
-.add-train{
-    width: 99%;
-    margin-left:auto;
-    margin-right:auto;
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
+.add-train {
+  width: 99%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#addform input{
-    margin-bottom: 10px;
-    display: block;
-    width: 99%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    margin-right: auto;
+#addform input {
+  margin-bottom: 10px;
+  display: block;
+  width: 99%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  border: 0px;
+  background-color: rgb(87, 86, 86);
+  color: white;
+  font-family: "Inconsolata", monospace;
+  letter-spacing: 1px;
 }
 
-table{
-    width: 100%;
-    text-align: center;
+label {
+  color: rgb(49, 49, 49);
+  display: block;
+  margin-bottom: 5px;
+  color: rgb(216, 216, 216);
+  font-family: "Inconsolata", monospace;
+  letter-spacing: 1px;
+
+}
+
+input:hover {
+  -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+}
+
+input:focus {
+  -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+  outline: 1px solid rgb(255, 166, 0);
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+tr:nth-child(even) {
+  background: rgb(90, 90, 90);
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: "Inconsolata", monospace;
 }
 
 th {
-    padding-bottom: 10px;
-    padding-top: 10px;
-    background-color: lightblue;
+  color: rgb(49, 49, 49);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: rgb(255, 187, 0);
+  font-weight: bold;
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 1px;
 }
 
 .table td {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid black;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-label{
-    display: block;
-    margin-bottom: 5px;
+#button {
+  background: linear-gradient(rgb(255, 187, 0), rgb(211, 137, 0));
+  color: white;
+  border: 0px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 1px;
 }
 
+#button:hover {
+  transform: scale(1.05);
+}
+
+#button:active {
+  -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+  outline: 0px;
+}
